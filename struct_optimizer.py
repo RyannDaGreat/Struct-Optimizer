@@ -16,11 +16,11 @@ def product(*i):
     return reduce(lambda x,y:x*y,i,1)
 def lcm(*i):
     return reduce(lambda x,y:x*y//gcd(x,y),i,1)
-c=element('c',1,1)
-s=element('s',2,2)
-i=element('i',4,4)
-f=element('f',4,4)
-d=element('d',8,4)
+c=element('c',1,1)#char:  has size 1 and have address divisble by 1
+s=element('s',2,2)#short: has size 2 and have address divisble by 2
+i=element('i',4,4)#int:   has size 4 and have address divisble by 4
+f=element('f',4,4)#float: has size 4 and have address divisble by 4
+d=element('d',8,4)#double:has size 8 and have address divisble by 4
 def struct(*elements,name=None):
     #Takes multiple elements and returns a single element
     size=0
